@@ -100,6 +100,7 @@ class Plot:
         ylabels = ax.get_yticks()
         xlabels = ax.get_xticks()
         ylabels = [str(i) for i in ylabels]
+
         labels = [
             digits.en_to_fa(
                 f"({i.replace('-', '').replace(' ', '')[:4]})" if '-' in i else i[:4])
